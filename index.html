@@ -19,6 +19,10 @@
   padding: 12px 22px;
   font-size: 11px;
 }
+#textField{
+  width:500px;
+  height:100px;
+}
 </style>
 <body ng-app="">
   <div id="wrapper">
@@ -59,8 +63,8 @@
         document.getElementById(next).style.display = "block";
       }
       function alertT(id){
-        if(document.getElementById(id).value.length<100000){
-          alert("Please enter more than 100000 characters");
+        if(document.getElementById(id).value.length<10){
+          alert("Please enter more than 10 characters");
         }
         else{
           display('no2','yes2');
