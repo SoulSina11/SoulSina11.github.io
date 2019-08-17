@@ -2,10 +2,20 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
 </script>
 <body ng-app="">
-Show HTML:
-<input type="button" value="Click me" onclick="myVar = false">
-<div ng-show="myVar">
-<h1>Welcome</h1>
-<p>Welcome to my home.</p>
+  <div id="myDIV">
+    <button onclick="myFunction()">Try it</button>
+    This is my DIV element.
+  </div>
+  <script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</body>
 </div>
 </html>
