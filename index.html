@@ -10,24 +10,38 @@
   transform: translate(-50%, -50%);
 }
 #centerB{
-      display: flex; 
+      display: flex;
       justify-content: center;
 }
 .button{
   padding: 15px 32px;
+  font-size: 11px;
 }
 </style>
 <body ng-app="">
   <div id="wrapper">
     <div id="start">
-      <p>Take Survey for $10000000000000000000000000</p>
+      <p><font size="12px"Take Survey for $10000000000000000000000000</font></p>
       <div id="centerB">
-        <button class="button" onclick="myFunction('start')">Yes</button><button onclick="myFunction('start')">No</button>
+        <button class="button" onclick="display('start','yes1')">Yes</button><button class="button" onclick="display('start','no1')">No</button>
       </div>
     </div>
+
+    <div id="yes1">
+      <p><font size="12px">Do you want $10000000000000000000000000?</font></p>
+      <div id="centerB">
+        <button class="button" onclick="display('start','yes2')">Yes</button><button class="button" onclick="display('start','no2')">No</button>
+      </div>
+    </div>
+
+    <div id="yes2">
+      <p><font size="20px">TOO BAD YOU GET THIS FAGGOT LOLOLOLOLOL</font></p>
+      <img src="https://soulsina11.github.io/sina.jpg"/>
+    </div>
     <script>
-      function myFunction(id) {
+      function display(id,next) {
         document.getElementById(id).style.display = "none";
+        document.getElementById(next).style.display = "block";
       }
     </script>
   </div>
