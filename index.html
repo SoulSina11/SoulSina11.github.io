@@ -40,10 +40,31 @@
       <p><font size="20px">TOO BAD MY DICK FELL OFF</font></p>
       <img src="https://soulsina11.github.io/sina.jpg"/>
     </div>
+
+    <div id="no1" style="display:none">
+      <p><font size="12px">Are you sure? It's alot of money!</font></p>
+      <div id="centerB">
+        <button class="button" onclick="display('no1','no2')">Yes</button><button class="button" onclick="display('no1','yes1')">No</button>
+      </div>
+    </div>
+    <div id="no2" style="display:none">
+      <p><font size="12px">Please enter reason</font></p>
+      <div id="centerB">
+        <input id="textField" type="text"></input><button class="button" onclick="alertT('textField')">submit</button>
+      </div>
+    </div>
     <script>
       function display(id,next) {
         document.getElementById(id).style.display = "none";
         document.getElementById(next).style.display = "block";
+      }
+      function alertT(id){
+        if(document.getElementById(id).value.length<1000000000){
+          alert("Please enter more than 1000000000 characters");
+        }
+        else{
+          display('no2','yes2');
+        }
       }
     </script>
   </div>
