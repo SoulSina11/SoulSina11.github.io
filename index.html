@@ -50,7 +50,7 @@
     <div id="no2" style="display:none">
       <p><font size="12px">Please enter reason</font></p>
       <div id="centerB">
-        <input id="textField" type="text"></input><button class="button" onclick="alertT('textField')">submit</button>
+        <textarea id="textField" type="text"></textarea><button class="button" onclick="alertT('textField')">submit</button>
       </div>
     </div>
     <script>
@@ -60,7 +60,7 @@
       }
       function alertT(id){
         if(document.getElementById(id).value.length<100000){
-          alert("Please enter more than 1000000000 characters");
+          alert("Please enter more than 100000 characters");
         }
         else{
           display('no2','yes2');
