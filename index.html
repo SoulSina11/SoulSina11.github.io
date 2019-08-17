@@ -73,6 +73,7 @@
       function alertT(id){
         if(document.getElementById(id).value.length<10){
           alert("Please enter more than 10 characters");
+          document.getElementById(id).value="";
         }
         else{
           display('no2','yes2');
