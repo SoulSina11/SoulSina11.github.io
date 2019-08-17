@@ -3,16 +3,20 @@
 </script>
 <style>
 #wrapper {
-  display: flex;
- align-items: center;
- justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }
 </style>
 <body ng-app="">
   <div id="wrapper">
     <div id="myDIV">
       <p>Take Survey for $10000000000000000000000000</p>
-      <button onclick="myFunction()">Yes</button><button onclick="myFunction()">No</button>
+      <div id="centerB">
+        <button onclick="myFunction()">Yes</button><button onclick="myFunction()">No</button>
+      </div>
     </div>
     <script>
       function myFunction() {
