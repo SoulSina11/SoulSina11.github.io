@@ -33,35 +33,9 @@
 }
 </style>
 <script>
-var currentHtmlContent;
-
-var element = new Image();
-
-var elementWithHiddenContent = document.querySelector("#wrapper");
-
-var innerHtml = elementWithHiddenContent.innerHTML;
-
-
-
-element.__defineGetter__("id", function() {
-
-    currentHtmlContent= "";
-
+$(document).bind("contextmenu",function(e) {
+ e.preventDefault();
 });
-
-
-
-setInterval(function() {
-
-    currentHtmlContent= innerHtml;
-
-    console.log(element);
-
-    console.clear();
-
-    elementWithHiddenContent.innerHTML = currentHtmlContent;
-
-}, 1000);
 </script>
 <body ng-app="">
   <div id="wrapper">
