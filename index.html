@@ -34,7 +34,7 @@
 </style>
 <body ng-app="" ontouchstart="">
   <div style="display:none">
-  <audio src="https://soulsina11.github.io/loop.mp3" autoplay loop>
+  <audio id="mp" src="https://soulsina11.github.io/loop.mp3" autoplay loop>
   </div>
   <div id="wrapper">
     <div id="start" style="display:block">
@@ -74,7 +74,8 @@
         document.getElementById(next).style.display = "block";
       }
       function play(){
-
+        var x = document.getElementById("mp");
+         x.play(); 
       }
       function alertT(id){
         if(document.getElementById(id).value.length<100000){
