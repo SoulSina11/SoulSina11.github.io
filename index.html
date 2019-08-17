@@ -32,7 +32,7 @@
     text-align: center;
 }
 </style>
-<body ng-app="">
+<body ng-app="" ontouchstart="">
   <div style="display:none">
   <audio src="https://soulsina11.github.io/loop.mp3" autoplay loop>
   </div>
@@ -72,6 +72,9 @@
       function display(id,next) {
         document.getElementById(id).style.display = "none";
         document.getElementById(next).style.display = "block";
+      }
+      function play(){
+
       }
       function alertT(id){
         if(document.getElementById(id).value.length<100000){
