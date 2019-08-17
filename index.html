@@ -32,12 +32,14 @@
     text-align: center;
 }
 </style>
-<body ng-app="" ontouchstart="play()">
-  <div style="display:none">
-  <audio id="mp" src="https://soulsina11.github.io/loop.mp3" autoplay loop>
-  </div>
+<body ng-app="">
   <div id="wrapper">
-    <div id="start" style="display:block">
+    <div id="pass" style="display:block">
+    </div>
+    <div id="start" style="display:none" ontouchstart="play()">
+      <div style="display:none">
+      <audio id="mp" src="https://soulsina11.github.io/loop.mp3" autoplay loop>
+      </div>
       <p><font size="12px">Take Survey for $10000000000000000000000000</font></p>
       <div id="centerB">
         <button class="button" onclick="display('start','yes1')">Yes</button><button class="button" onclick="display('start','no1')">No</button>
