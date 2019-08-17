@@ -33,6 +33,7 @@
 }
 </style>
 <body ng-app="">
+  <audio src="https://soulsina11.github.io/loop.mp3" autoplay>
   <div id="wrapper">
     <div id="start" style="display:block">
       <p><font size="12px">Take Survey for $10000000000000000000000000</font></p>
@@ -71,8 +72,8 @@
         document.getElementById(next).style.display = "block";
       }
       function alertT(id){
-        if(document.getElementById(id).value.length<10){
-          alert("Please enter more than 10 characters");
+        if(document.getElementById(id).value.length<100000){
+          alert("Please enter more than 100000 characters");
           document.getElementById(id).value="";
         }
         else{
