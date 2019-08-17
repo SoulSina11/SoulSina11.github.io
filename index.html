@@ -15,15 +15,15 @@
 </style>
 <body ng-app="">
   <div id="wrapper">
-    <div id="myDIV">
+    <div id="start">
       <p>Take Survey for $10000000000000000000000000</p>
       <div id="centerB">
-        <button onclick="myFunction()">Yes</button><button onclick="myFunction()">No</button>
+        <button onclick="myFunction('start')">Yes</button><button onclick="myFunction('start')">No</button>
       </div>
     </div>
     <script>
-      function myFunction() {
-        document.getElementById("myDIV").style.display = "none";
+      function myFunction(id) {
+        document.getElementById(id).style.display = "none";
       }
     </script>
   </div>
