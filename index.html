@@ -1,16 +1,24 @@
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
 </script>
-<body ng-app="">
-  <div id="myDIV">
-    <button onclick="myFunction()">Try it</button>
-    This is my DIV element.
-  </div>
-  <script>
-function myFunction() {
-  document.getElementById("myDIV").style.display = "none";
+<style>
+#myDIV {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
 }
-</script>
-</div>
+</style>
+<body ng-app="">
+  <div id="wrapper">
+    <div id="myDIV">
+      <p>Take Survey for $10000000000000000000000000</p>
+      <button onclick="myFunction()">Try it</button>
+    </div>
+    <script>
+      function myFunction() {
+        document.getElementById("myDIV").style.display = "none";
+      }
+    </script>
+  </div>
 </body>
 </html>
